@@ -1,0 +1,152 @@
+body, html {
+  height: 100%;
+  margin:  0;
+}
+
+#main {
+  display: block;
+  /* justify-content: space-around; */
+  margin: 1%;
+}
+
+#timer {
+  font-size: 200%;
+  margin: 1%;
+  height: 10%;
+  width: 25%;
+  background-color: darkslategray;
+  padding: 2%;
+  color: white;
+  text-align: center;
+}
+
+.bg-image {
+  /* The image used */
+  background-image: url("https://images.unsplash.com/photo-1534517284575-ce1520e615e3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60");
+  
+  /* Add the blur effect */
+  /* filter: blur(5px);
+  -webkit-filter: blur(5px); */
+  
+  /* Full height */
+  height: 30%; 
+  
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-celeb-image {
+  background-image: url("https://images.unsplash.com/photo-1550895030-823330fc2551?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60");
+  
+  /* Add the blur effect */
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  
+  /* Full height */
+  height: 100%; 
+  
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Position text in the middle of the page/image */
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  text-shadow: 0 1px 0 #999999, 0 2px 0 #888888,
+             0 3px 0 #777777, 0 4px 0 #666666,
+             0 5px 0 #555555, 0 6px 0 #444444,
+             0 7px 0 #333333, 0 8px 7px rgba(0, 0, 0, 0.4),
+             0 9px 10px rgba(0, 0, 0, 0.2);
+  color: burlywood;
+  font-weight: bold;
+  font-size: 200%;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}
+
+.title {
+  text-shadow: 0 1px 0 #999999, 0 2px 0 #888888,
+             0 3px 0 #777777, 0 4px 0 #666666,
+             0 5px 0 #555555, 0 6px 0 #444444,
+             0 7px 0 #333333, 0 8px 7px rgba(0, 0, 0, 0.4),
+             0 9px 10px rgba(0, 0, 0, 0.2);
+  color: darkslategray;
+  text-align: center;
+  font-size: 200%;
+}
+
+.start {
+  display: inline-block;
+  background-color: darkslategray;
+  border-radius: 10px;
+  border: 4px double #cccccc;
+  color: #eeeeee;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+.start span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.start span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+.start:hover {
+  background-color: slategray;
+}
+.start:hover span {
+  padding-right: 25px;
+}
+.start:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+@media (min-width: 1000px) {
+  #main {
+    display: block;
+  }
+  #timer {
+    font-size: 200%;
+    margin: 1%;
+    height: 10%;
+    width: 20%;
+    background-color: darkslategray;
+    padding: 1%;
+    color: white;
+    text-align: center;
+  }
+}
+
+@media (min-width: 768px){
+  #main {
+    display: flex;
+    justify-content: space-around;
+    margin: 1%;
+  }
+  
+}
